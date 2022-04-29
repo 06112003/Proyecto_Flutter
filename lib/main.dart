@@ -1,4 +1,4 @@
-import 'package:amigo_almacen/pages/login_page.dart';
+import 'package:amigo_almacen/pages/pages.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -16,7 +16,13 @@ class MyApp extends StatelessWidget {
       title: 'Amigo_Almacen',
       initialRoute: LoginPage.routeName,
       routes: {
-        LoginPage.routeName: (_) => LoginPage(),
+        LoginPage.routeName: (_) => const LoginPage(),
+        RegistroPage.routeName: (_) => const RegistroPage(),
+        PrincipalPage.routeName: (_) => const PrincipalPage(),
+        ComidaPage.routeName: (_) => const ComidaPage(),
+        BebidasPage.routeName: (_) => const BebidasPage(),
+        RopaPage.routeName: (_) => const RopaPage(),
+        ReportesPage.routeName: (_) => const ReportesPage(),
       },
     );
   }
